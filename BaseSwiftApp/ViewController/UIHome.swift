@@ -8,15 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UIHome: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("UIHome,viewDidLoad")
+        
         // Do any additional setup after loading the view, typically from a nib.
+//        let client = ClientManager();
+//        client._AsynGet()
+//        client._Get()
     }
+    override func viewDidAppear(animated: Bool) {
+        
+     print("UIHome,viewDidAppear")
+    }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        NSLog("UIHome prepareForSegue - %@", segue.identifier!);
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 

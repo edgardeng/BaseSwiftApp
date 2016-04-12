@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let isSignIn = false;
+        if(isSignIn){
+           
+        }else{
+            let storyboard :UIStoryboard = UIStoryboard(name: "Signin", bundle: NSBundle.mainBundle() );
+            self.window?.rootViewController = storyboard.instantiateInitialViewController();
+        }
         return true
     }
 
